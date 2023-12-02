@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>welcome to my first html page with flask</h1>
+   
+   <h4>hello, {{content}}</h4>
+
+   <h4>you can also write python code in flask</h4>
+   <h5>testing an for loop and testing an if statment</h5>
+   {% for i in range(10)%}
+   {% if i % 2 == 0%}
+   <h5>this is an even number {{i}}</h5>
+{% endif %}
+   {% endfor %}
+
+   <h4>you can also show a python list</h4>
+   {% for x in names%}
+
+   <h5>this is a name in the list {{x}}</h5>
+   {% endfor %}
+</body>
+</html>
