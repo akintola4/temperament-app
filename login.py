@@ -11,7 +11,7 @@ def home():
         username = request.form.get('username')
         
         return f'{name}, your username is {username}'
-    return render_template('home.html')
+    return render_template('login.html')
 
 
 # Initiating the application

@@ -8,15 +8,16 @@
     <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body class="bg-black text-white">
     <header
-        class=" sm:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 w-12/12 inset-x-0 top-0 z-10  ">
+        class=" sm:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 inset-x-0 top-0 z-10  ">
 
         <nav class="flex items-center justify-between p-4" aria-label="Global">
 
-            <div class="mx flex flex-row   items-center gap-5">
+            <div class=" flex flex-row  items-center gap-5">
                 <img src="img/logo.svg" alt="" class="w-3/12">
                 <h4 class="font-semi-bold text-sm">temperament-test</h4>
             </div>
@@ -70,14 +71,16 @@
     <main class="pt-32 sm:pt-40 gap-10 items-center justify-between  mx-10">
         <div class="hero-section flex flex-col sm:flex-row gap-10 items-center justify-between ">
             <div class="hero-2  sm:hidden" data-aos="zoom-in-left">
-                <img src="img/hero.svg" alt="" >
+                <img src="img/hero.svg" alt="">
             </div>
 
-            <div class="hero-1 flex flex-col gap-10 sm:w-10/12" >
-                <h4 class="text-2xl text-center sm:text-left sm:text-6xl font-bold " data-aos="fade-right">Gain Valuable Insights</h4>
+            <div class="hero-1 flex flex-col gap-10 sm:w-10/12">
+                <h4 class="text-2xl text-center sm:text-left sm:text-6xl font-bold " data-aos="fade-right">Gain Valuable
+                    Insights</h4>
 
                 <div class="sm:hidden flex flex-col gap-5">
-                    <p class="text-sm sm:text-md sm:w-10/12" data-aos="fade-right">Embark on a journey of self-discovery and unlock your true
+                    <p class="text-sm text-justify sm:text-md sm:w-10/12" data-aos="fade-right">Embark on a journey of self-discovery
+                        and unlock your true
                         potential
                         with
                         our scientifically validated temperament test. Our comprehensive assessment delves into the
@@ -97,7 +100,8 @@
                 </div>
 
                 <div class=" hidden sm:flex flex flex-col gap-10">
-                    <p class="text-md w-10/12 text-justify" data-aos="fade-right">Embark on a journey of self-discovery and unlock your true
+                    <p class="text-md w-10/12 text-justify" data-aos="fade-right">Embark on a journey of self-discovery
+                        and unlock your true
                         potential with our scientifically validated temperament test. Our comprehensive assessment
                         delves into the intricacies of your personality, revealing your unique blend of strengths,
                         weaknesses, and preferences. Gain valuable insights into your innate tendencies, communication
@@ -107,32 +111,39 @@
                     </p>
                     <div class="flex flex-row gap-10" data-aos="fade-right">
                         <a class="border-2 rounded-md p-2 border-white hover:bg-white hover:text-black   text-white "
-                            href="">Test your temperament</a>
+                            href="#section-2">Test your temperament</a>
                         <a class="border-2 rounded-md p-2 hover:border-white hover:bg-black bg-white text-black   hover:text-white "
-                            href="">How it works</a>
+                            href="#section-1">How it works</a>
                     </div>
 
-                </div>
-                <div class="flex flex-row gap-5 text-2xl ">
-                    <p class="text-slate-300 text-sm">Companies that trust US</p>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
                 </div>
             </div>
             <div class="hero-2 hidden sm:block" data-aos="zoom-in-left">
                 <img src="img/hero.svg" alt="" style="width: 150%;">
             </div>
         </div>
-        <div class="section-1 my-10 sm:my-20 gap-5 mx-auto sm:w-6/12 items-center text-center align-center flex flex-col" >
-            <h4 class="text-2xl text-center sm:text-left sm:text-4xl font-bold" data-aos="fade-right">Fill in the box </h4>
-            <p class="text-sm sm:text-md text-justify" data-aos="fade-left">Many culture many artist we a love all music and we at speedup
-                will push and
-                create promotions for your
-                music while you can focus on producing your music and we do all the heavy lifting for you.</p>
+        <div id="section-1"
+            class="section-1 my-10 sm:my-20 gap-5 mx-auto sm:w-6/12 items-center text-center align-center flex flex-col">
+            <h4 class="text-2xl text-center sm:text-left sm:text-4xl font-bold" data-aos="fade-right">How it works
+            </h4>
+            <div class="flex flex-col gap-5">
+                <li class="text-sm sm:text-md text-justify" data-aos="fade-left">Read the question</li>
+                <li class="text-sm sm:text-md text-justify" data-aos="fade-left">fill in the answer by selecting the one
+                    you feel is right</li>
+                <li class="text-sm sm:text-md text-justify" data-aos="fade-left">select your option ranging from (Strongly Disagree, Disagree, Neutral, Agree, Strongly Agree)</li>
+                <li class="text-sm sm:text-md text-justify" data-aos="fade-left">when done click on the submit button
+                </li>
+                
+            </div>
+
         </div>
-        <div class="section-2 my-10 sm:my-20 border-2">
-            <form action="" class="flex flex-col gap-10 p-10 justify-between">   
+        <div id="section-2"
+            class="section-1 my-5 sm:my-20 mx-auto sm:w-6/12 items-center text-center align-center flex flex-col">
+            <h4 class="text-2xl text-center sm:text-left sm:text-4xl font-bold" data-aos="fade-right">Fill in the box
+            </h4>
+        </div>
+        <div id="section-2" class="section-2 my-10 sm:my-20 border-2" data-aos="zoom-in-left">
+            <form id="form" class=" hidden sm:flex flex-col gap-10 p-10 justify-between">
                 <div class="flex flex-row justify-between">
                     <div>
                         <h4>questions</h4>
@@ -140,240 +151,228 @@
                     <div class="likert-scale flex flex-row   gap-24">
                         <div class="flex flex-col">
                             <label for="stronglyDisagree">Strongly Disagree</label>
-                            
+
                         </div>
                         <div class="flex flex-col">
                             <label for="disagree">Disagree</label>
-                            
+
                         </div>
-                       <div class="flex flex-col">
-                        <label for="neutral">Neutral</label>
-                        
+                        <div class="flex flex-col">
+                            <label for="neutral">Neutral</label>
+
                         </div>
                         <div class="flex flex-col">
                             <label for="agree">Agree</label>
-        
+
                         </div>
                         <div class="flex flex-col">
                             <label for="stronglyAgree">Strongly Agree</label>
-                          
+
                         </div>
-                        </div>
-                </div>     
+                    </div>
+                </div>
                 <div class="flex flex-row justify-between">
                     <div>
-                        <h4>How often do you make people feel welcome?</h4>
+                        <h4 for="openness">Openness to Experience:</h4>
                     </div>
+                 
                     <div class="likert-scale flex flex-row gap-40">
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyDisagree" name="likertScale" value="1" class="border-gray-300 rounded-md cursor-pointer">
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="disagree" name="likertScale" value="2" class="border-gray-300 rounded-md cursor-pointer">
-                            
-                        </div>
-                       <div class="flex flex-col">
-                        <input type="radio" id="neutral" name="likertScale" value="3" class="border-gray-300 rounded-md cursor-pointer">
-                        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="agree" name="likertScale" value="4" class="border-gray-300 rounded-md cursor-pointer">
-        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyAgree" name="likertScale" value="5" class="border-gray-300 rounded-md cursor-pointer">
-                          
-                        </div>
-                        </div>
-                </div>           
+
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness1" name="openness" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness2" name="openness" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness3" name="openness" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness4" name="openness" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness5" name="openness" value="5" required> 
+                    </div>  
+                </div>
                 <div class="flex flex-row justify-between">
                     <div>
-                        <h4>How often do you make people feel welcome?</h4>
+                        <h4>Conscientiousness/Orderly:</h4>
                     </div>
                     <div class="likert-scale flex flex-row gap-40">
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyDisagree" name="likertScale" value="1" class="border-gray-300 rounded-md cursor-pointer">
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="disagree" name="likertScale" value="2" class="border-gray-300 rounded-md cursor-pointer">
-                            
-                        </div>
-                       <div class="flex flex-col">
-                        <input type="radio" id="neutral" name="likertScale" value="3" class="border-gray-300 rounded-md cursor-pointer">
-                        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="agree" name="likertScale" value="4" class="border-gray-300 rounded-md cursor-pointer">
-        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyAgree" name="likertScale" value="5" class="border-gray-300 rounded-md cursor-pointer">
-                          
-                        </div>
-                        </div>
-                </div>           
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness1" name="conscientiousness" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness2" name="conscientiousness" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness3" name="conscientiousness" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness4" name="conscientiousness" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness5" name="conscientiousness" value="5" required> 
+                      </div>  
+                </div>
                 <div class="flex flex-row justify-between">
                     <div>
-                        <h4>How often do you make people feel welcome?</h4>
+                        <h4>Extraversion:</h4>
                     </div>
                     <div class="likert-scale flex flex-row gap-40">
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyDisagree" name="likertScale" value="1" class="border-gray-300 rounded-md cursor-pointer">
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="disagree" name="likertScale" value="2" class="border-gray-300 rounded-md cursor-pointer">
-                            
-                        </div>
-                       <div class="flex flex-col">
-                        <input type="radio" id="neutral" name="likertScale" value="3" class="border-gray-300 rounded-md cursor-pointer">
-                        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="agree" name="likertScale" value="4" class="border-gray-300 rounded-md cursor-pointer">
-        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyAgree" name="likertScale" value="5" class="border-gray-300 rounded-md cursor-pointer">
-                          
-                        </div>
-                        </div>
-                </div>           
+
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion1" name="extraversion" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion2" name="extraversion" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion3" name="extraversion" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion4" name="extraversion" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion5" name="extraversion" value="5" required> 
+                       </div>  
+                </div>
                 <div class="flex flex-row justify-between">
                     <div>
-                        <h4>How often do you make people feel welcome?</h4>
+                        <h4>Agreeableness:</h4>
                     </div>
                     <div class="likert-scale flex flex-row gap-40">
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyDisagree" name="likertScale" value="1" class="border-gray-300 rounded-md cursor-pointer">
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="disagree" name="likertScale" value="2" class="border-gray-300 rounded-md cursor-pointer">
-                            
-                        </div>
-                       <div class="flex flex-col">
-                        <input type="radio" id="neutral" name="likertScale" value="3" class="border-gray-300 rounded-md cursor-pointer">
-                        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="agree" name="likertScale" value="4" class="border-gray-300 rounded-md cursor-pointer">
-        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyAgree" name="likertScale" value="5" class="border-gray-300 rounded-md cursor-pointer">
-                          
-                        </div>
-                        </div>
-                </div>           
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness1" name="agreeableness" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness2" name="agreeableness" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness3" name="agreeableness" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness4" name="agreeableness" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness5" name="agreeableness" value="5" required> 
+                        </div>  
+                </div>
                 <div class="flex flex-row justify-between">
                     <div>
-                        <h4>How often do you make people feel welcome?</h4>
+                        <h4>Neuroticism/Anxious:</h4>
                     </div>
                     <div class="likert-scale flex flex-row gap-40">
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyDisagree" name="likertScale" value="1" class="border-gray-300 rounded-md cursor-pointer">
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="disagree" name="likertScale" value="2" class="border-gray-300 rounded-md cursor-pointer">
-                            
-                        </div>
-                       <div class="flex flex-col">
-                        <input type="radio" id="neutral" name="likertScale" value="3" class="border-gray-300 rounded-md cursor-pointer">
-                        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="agree" name="likertScale" value="4" class="border-gray-300 rounded-md cursor-pointer">
-        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyAgree" name="likertScale" value="5" class="border-gray-300 rounded-md cursor-pointer">
-                          
-                        </div>
-                        </div>
-                </div>           
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism1" name="neuroticism" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism2" name="neuroticism" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism3" name="neuroticism" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism4" name="neuroticism" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism5" name="neuroticism" value="5" required> 
+                      </div>  
+                </div>
                 <div class="flex flex-row justify-between">
                     <div>
-                        <h4>How often do you make people feel welcome?</h4>
+                        <h4>Sensation-seeking:</h4>
                     </div>
                     <div class="likert-scale flex flex-row gap-40">
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyDisagree" name="likertScale" value="1" class="border-gray-300 rounded-md cursor-pointer">
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="disagree" name="likertScale" value="2" class="border-gray-300 rounded-md cursor-pointer">
-                            
-                        </div>
-                       <div class="flex flex-col">
-                        <input type="radio" id="neutral" name="likertScale" value="3" class="border-gray-300 rounded-md cursor-pointer">
-                        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="agree" name="likertScale" value="4" class="border-gray-300 rounded-md cursor-pointer">
-        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyAgree" name="likertScale" value="5" class="border-gray-300 rounded-md cursor-pointer">
-                          
-                        </div>
-                        </div>
-                </div>           
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking1" name="sensation-seeking" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking2" name="sensation-seeking" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking3" name="sensation-seeking" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking4" name="sensation-seeking" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking5" name="sensation-seeking" value="5" required> 
+                       </div>  
+                </div>
                 <div class="flex flex-row justify-between">
                     <div>
-                        <h4>How often do you make people feel welcome?</h4>
+                        <h4>impulsiveness:</h4>
                     </div>
                     <div class="likert-scale flex flex-row gap-40">
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyDisagree" name="likertScale" value="1" class="border-gray-300 rounded-md cursor-pointer">
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="disagree" name="likertScale" value="2" class="border-gray-300 rounded-md cursor-pointer">
-                            
-                        </div>
-                       <div class="flex flex-col">
-                        <input type="radio" id="neutral" name="likertScale" value="3" class="border-gray-300 rounded-md cursor-pointer">
-                        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="agree" name="likertScale" value="4" class="border-gray-300 rounded-md cursor-pointer">
-        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyAgree" name="likertScale" value="5" class="border-gray-300 rounded-md cursor-pointer">
-                          
-                        </div>
-                        </div>
-                </div>           
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness1" name="impulsiveness" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness2" name="impulsiveness" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness3" name="impulsiveness" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness4" name="impulsiveness" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness5" name="impulsiveness" value="5" required> 
+                       </div>  
+                </div>
                 <div class="flex flex-row justify-between">
                     <div>
-                        <h4>How often do you make people feel welcome?</h4>
+                        <h4>optimism:</h4>
                     </div>
                     <div class="likert-scale flex flex-row gap-40">
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyDisagree" name="likertScale" value="1" class="border-gray-300 rounded-md cursor-pointer">
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="disagree" name="likertScale" value="2" class="border-gray-300 rounded-md cursor-pointer">
-                            
-                        </div>
-                       <div class="flex flex-col">
-                        <input type="radio" id="neutral" name="likertScale" value="3" class="border-gray-300 rounded-md cursor-pointer">
-                        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="agree" name="likertScale" value="4" class="border-gray-300 rounded-md cursor-pointer">
-        
-                        </div>
-                        <div class="flex flex-col">
-                            <input type="radio" id="stronglyAgree" name="likertScale" value="5" class="border-gray-300 rounded-md cursor-pointer">
-                          
-                        </div>
-                        </div>
-                </div>                 
-                   <button type="submit" class="border-2 rounded-md p-2 mx-auto hover:border-white hover:bg-black bg-white text-black w-6/12 text-sm sm:text-md  hover:text-white">SUBMIT</button>
-            </form>
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism1" name="optimism" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism2" name="optimism" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism3" name="optimism" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism4" name="optimism" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism5" name="optimism" value="5" required> 
+                      </div>  
+                </div>
+               <input type="submit" value="Predict Temperament"
+              class="border-2 rounded-md p-2 mx-auto hover:border-white hover:bg-black bg-white text-black w-6/12 text-sm sm:text-md  hover:text-white">
+      </form>
+            <form id="form" class="flex sm:hidden flex-col gap-10 p-10 justify-between">
+                <div class="flex flex-col gap-5 justify-between">
+                    <div>
+                        <h4 for="openness">Openness to Experience:</h4>
+                    </div>
+                 
+                    <div class="likert-scale flex flex-row gap-20">
+
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness1" name="openness" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness2" name="openness" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness3" name="openness" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness4" name="openness" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness5" name="openness" value="5" required> 
+                    </div>  
+                </div>
+                <div class="flex flex-col gap-5 justify-between">
+                    <div>
+                        <h4>Conscientiousness/Orderly:</h4>
+                    </div>
+                    <div class="likert-scale flex flex-row gap-20">
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness1" name="conscientiousness" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness2" name="conscientiousness" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness3" name="conscientiousness" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness4" name="conscientiousness" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness5" name="conscientiousness" value="5" required> 
+                      </div>  
+                </div>
+                <div class="flex flex-col gap-5 justify-between">
+                    <div>
+                        <h4>Extraversion:</h4>
+                    </div>
+                    <div class="likert-scale flex flex-row gap-20">
+
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion1" name="extraversion" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion2" name="extraversion" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion3" name="extraversion" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion4" name="extraversion" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion5" name="extraversion" value="5" required> 
+                       </div>  
+                </div>
+                <div class="flex flex-col gap-5 justify-between">
+                    <div>
+                        <h4>Agreeableness:</h4>
+                    </div>
+                    <div class="likert-scale flex flex-row gap-20">
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness1" name="agreeableness" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness2" name="agreeableness" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness3" name="agreeableness" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness4" name="agreeableness" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness5" name="agreeableness" value="5" required> 
+                        </div>  
+                </div>
+                <div class="flex flex-col gap-5 justify-between">
+                    <div>
+                        <h4>Neuroticism/Anxious:</h4>
+                    </div>
+                    <div class="likert-scale flex flex-row gap-20">
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism1" name="neuroticism" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism2" name="neuroticism" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism3" name="neuroticism" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism4" name="neuroticism" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism5" name="neuroticism" value="5" required> 
+                      </div>  
+                </div>
+                <div class="flex flex-col gap-5 justify-between">
+                    <div>
+                        <h4>Sensation-seeking:</h4>
+                    </div>
+                    <div class="likert-scale flex flex-row gap-20">
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking1" name="sensation-seeking" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking2" name="sensation-seeking" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking3" name="sensation-seeking" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking4" name="sensation-seeking" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking5" name="sensation-seeking" value="5" required> 
+                       </div>  
+                </div>
+                <div class="flex flex-col gap-5 justify-between">
+                    <div>
+                        <h4>impulsiveness:</h4>
+                    </div>
+                    <div class="likert-scale flex flex-row gap-20">
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness1" name="impulsiveness" value="1" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness2" name="impulsiveness" value="2" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness3" name="impulsiveness" value="3" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness4" name="impulsiveness" value="4" required> 
+                        <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness5" name="impulsiveness" value="5" required> 
+                       </div>  
+                </div>
+                <div class="flex flex-row gap-5 justify-between">
+               <input type="submit" value="Predict Temperament"
+              class="border-2 rounded-md p-2 mx-auto hover:border-white hover:bg-black bg-white text-black w-6/12 text-sm sm:text-md  hover:text-white">
+      </form>
         </div>
-        <div class="results flex flex-col gap-10 border-2 border-white p-5 sm:p-10 sm:w-8/12 mx-auto" data-aos="zoom-in-left">
+    </div>
+
+        <div class="results flex flex-col gap-10 border-2 border-white p-5 sm:p-10 sm:w-8/12 mx-auto"
+            data-aos="zoom-in-left">
             <h4 class="text-lg text-center sm:text-left sm:text-2xl font-bold">RESULT</h4>
-            <p class="sm:text-center text-sm sm:text-md">Your predicted temperament type is _____________</p>
+            <div id="result-message">
+            </div>
             <p class="sm:text-center text-sm sm:text-md">
                 this was made possible with the help of machine learning</p>
             <div class="flex flex-col sm:flex-row gap-5 justify-between">
@@ -383,6 +382,57 @@
                     <i class="fa fa-linkedin" aria-hidden="true"></i>
                     <i class="fa fa-facebook" aria-hidden="true"></i>
                 </div>
+                <div>
+                    <dialog
+                        class="w-10/12 h-4/6 bg-gray-400 rounded-md  justify-between bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 border border-gray-100 text-white p-5 " >
+                        <div class="flex flex-row justify-between">
+                            <h4 class="text-lg text-center sm:text-left sm:text-2xl font-bold">RESULT</h4>
+                            <button autofocus><i class="fa fa-close" aria-hidden="true"></i></button>
+                        </div>
+
+                        <div class="results flex flex-col gap-10 sm:p-10 " data-aos="zoom-in-left">
+                            <div id="result-message-dialog">
+                            </div>
+                            <p class="sm:text-justify text-sm text-bold sm:text-3xl">Your predicted temperament type is
+                                Sanguine</p>
+                            <div class="flex flex-col gap-5">
+                                <p class="text-sm text-bold sm:text-lg text-justify" data-aos="fade-left">The Sanguine Temperament:</p>
+                                <li class="text-sm sm:text-md text-justify" data-aos="fade-left">Description: Sanguine
+                                    individuals are known for their optimism, enthusiasm, and outgoing nature. They are
+                                    social butterflies, effortlessly drawing others in with their infectious laughter
+                                    and vivacious energy. Adaptable and easygoing, they embrace new experiences and
+                                    readily adjust to change. Sanguines excel at communication, often using humor and
+                                    storytelling to connect with others. Their positive outlook and carefree spirit make
+                                    them naturally charismatic leaders.
+
+                                </li>
+                                <li class="text-sm sm:text-md text-justify" data-aos="fade-left">Strengths: Optimistic, enthusiastic, adaptable, communicative, charismatic, social</li>
+                                <li class="text-sm sm:text-md text-justify" data-aos="fade-left">Challenges: Can be easily distracted, impulsive, lacking focus, prone to boredom</li>
+                            
+                            </div>
+                     
+                        </div>
+                        <div class="col-4 flex p-5  cursor-pointer text-white  flex-col gap-5">
+                        <div class="col-4-1 flex flex-row items-center place-content-between">
+                            <h4 class="text-2xl">FULL REPORT</h4>
+                        </div>
+                        <div class="col-4-2 w-4/12 mx-auto">
+                            <canvas id="myChart-2" width="300" height="110" class="chartjs-render-monitor"> </canvas>
+                        </div>
+                    </div>
+                        <div class="flex flex-row item-center mt-22">
+                            <a class="border-2 rounded-md p-2 text-center mx-auto hover:border-white hover:bg-black bg-white text-black  text-sm sm:text-md  hover:text-white "
+                                href="">DOWNLOAD RESULT </a>
+                        </div>
+
+                    </dialog>
+                    <button
+                        class="border-2 rounded-md p-2 mx-auto hover:border-white hover:bg-black bg-white text-black  text-sm sm:text-md  hover:text-white">FULL
+                        RESULT</button>
+
+
+                </div>
+
                 <h4 class="text-sm sm:text-md">MODEL MADE BY TOPE AKINTOLA</h4>
             </div>
         </div>
@@ -398,7 +448,7 @@
                             <h4 class="font-light">Language</h4>
                         </label>
                         <select name="" id="">
-    
+
                             <option value="" class="text-white">Select language</option>
                             <option value="">English</option>
                             <option value="">German</option>
@@ -444,7 +494,8 @@
                 </ul>
             </div> -->
             <div class=" text-center flex items-center flex-col">
-                <h4>temperament-test, Built by <a href="https://www.linkedin.com/in/tope-akintola-b47b381b9/" class="text-blue-400">Tope Akinfolarin Akintola</a> 2023 all rights reserved.</h4>
+                <h4>temperament-test, Built by <a href="https://www.linkedin.com/in/tope-akintola-b47b381b9/"
+                        class="text-blue-400">Tope Akinfolarin Akintola</a> 2023 all rights reserved.</h4>
             </div>
         </footer>
     </main>
@@ -454,20 +505,118 @@
 </body>
 
 <script>
-    
-    
- // Grab HTML Elements
- const btn = document.querySelector("button.mobile-menu-button");
- const menu = document.querySelector(".mobile-menu");
 
- // Add Event Listeners
- btn.addEventListener("click", () => {
-     menu.classList.toggle("hidden");
- });
- //to start using the libary
- AOS.init(
+
+    // Grab HTML Elements
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    // Add Event Listeners
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+
+    //using the modal 
+    const dialog = document.querySelector("dialog");
+    const showButton = document.querySelector("dialog + button");
+    const closeButton = document.querySelector("dialog button");
+
+    // "Show the dialog" button opens the dialog modally
+    showButton.addEventListener("click", () => {
+        dialog.showModal();
+    });
+
+    // "Close" button closes the dialog
+    closeButton.addEventListener("click", () => {
+        dialog.close();
+    });
+
+    const predictions = data.individualPredictions;
+    const labels = [];
+    const dataValues = [];
+    
+    for (const key in predictions) {
+      labels.push(key);
+      dataValues.push(predictions[key]);
+    }
+    
+    //to start using the libary
+    AOS.init(
     );
+    const ctx2 = document.getElementById('myChart-2');
+    new Chart(ctx2, {
+        type: 'pie',
+        data: {
+          labels: labels,
+          datasets: [{
+            backgroundColor: ['#f44336', '#3f51b5', '#4caf50', '#ffeb3b', '#9c27b0'], // Customize colors
+            data: dataValues
+          }]
+        },
+        options: {
+          title: {
+            display: true,
+            text: 'Individual Temperament Predictions'
+          },
+          legend: {
+            display: true,
+            position: 'bottom'
+          }
+        }
+      });
+      
 
+         // Wrap the JavaScript code inside a DOMContentLoaded event listener to ensure the form element is loaded
+         const form = document.getElementById('form');
+         form.addEventListener('submit', (event) => {
+           event.preventDefault();
+         
+           const formData = new FormData(form);
+         
+           fetch('/', {
+             method: 'POST',
+             body: formData
+           })
+             .then(response => response.json())
+             .then(data => {
+               // Create and populate HTML elements for the result message
+               const resultMessageElement = document.createElement('p');
+               resultMessageElement.classList.add("sm:text-center", "text-sm", "sm:text-md")
+               resultMessageElement.textContent = `Your predicted temperament type is `+data.resultMessage;
+               document.getElementById('result-message').appendChild(resultMessageElement);
+         
+               // Create and populate HTML elements for the accuracy message
+               const accuracyMessageElement = document.createElement('p');
+               accuracyMessageElement.textContent = 'Accuracy Scores:';
+         
+               for (const classifierName in data.accuracyMessage) {
+                 const accuracyScore = data.accuracyMessage[classifierName];
+                 const accuracyScoreElement = document.createElement('span');
+                 accuracyScoreElement.textContent = ` ${classifierName}: ${accuracyScore.toFixed(3)}`;
+                 accuracyMessageElement.appendChild(accuracyScoreElement);
+                 accuracyMessageElement.appendChild(document.createElement('br'));
+               }
+         
+               document.getElementById('result-message').appendChild(accuracyMessageElement);
+         
+               // Handle individual predictions
+               const individualPredictions = data.individualPredictions;
+               const predictionsElement = document.getElementById('individual-predictions');
+         
+               // Clear the existing predictions (if any)
+               predictionsElement.textContent = '';
+         
+               // Create and add paragraph elements for each prediction
+               for (const prediction of individualPredictions) {
+                 const predictionElement = document.createElement('p');
+                 predictionElement.textContent = prediction;
+                 predictionsElement.appendChild(predictionElement);
+               }
+         
+               // Display the individual predictions container
+               predictionsElement.style.display = 'block';
+             });
+         });
 </script>
 
 </html>
