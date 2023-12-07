@@ -21,13 +21,13 @@
           <h4 class="font-semi-bold text-sm">temperament-test</h4>
       </div>
       <ul class="hidden flex flex-row    sm:flex gap-12">
-          <li><a class="relative text-lg focus:text-black  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+          <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                   href="">Learn</a></li>
-          <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+          <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                   href="">Research Paper</a></li>
-          <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+          <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                   href="">Invest</a></li>
-          <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+          <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                   href="">Github</a></li>
       </ul>
       <div class="nav-3 hidden sm:block">
@@ -172,9 +172,9 @@
             </div>
         </div>
         <div class="flex flex-row justify-between">
-            <div>
-                <h4 for="openness">Openness to Experience:</h4>
-            </div>
+          <div id="quiz-container">
+            <div for="openness" class="question-tag">Openness to Experience</div>
+        </div>
          
             <div class="likert-scale flex flex-row gap-40">
 
@@ -186,8 +186,8 @@
             </div>  
         </div>
         <div class="flex flex-row justify-between">
-            <div>
-                <h4>Conscientiousness/Orderly:</h4>
+             <div id="quiz-container">
+            <div class="question-tag">Conscientiousness</div>
             </div>
             <div class="likert-scale flex flex-row gap-40">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness1" name="conscientiousness" value="1" required> 
@@ -198,9 +198,9 @@
               </div>  
         </div>
         <div class="flex flex-row justify-between">
-            <div>
-                <h4>Extraversion:</h4>
-            </div>
+          <div id="quiz-container">
+            <div class="question-tag">Extraversion</div>
+                </div>
             <div class="likert-scale flex flex-row gap-40">
 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion1" name="extraversion" value="1" required> 
@@ -211,9 +211,9 @@
                </div>  
         </div>
         <div class="flex flex-row justify-between">
-            <div>
-                <h4>Agreeableness:</h4>
-            </div>
+          <div id="quiz-container">
+            <div class="question-tag">Agreeableness</div>
+                </div>
             <div class="likert-scale flex flex-row gap-40">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness1" name="agreeableness" value="1" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness2" name="agreeableness" value="2" required> 
@@ -223,9 +223,9 @@
                 </div>  
         </div>
         <div class="flex flex-row justify-between">
-            <div>
-                <h4>Neuroticism/Anxious:</h4>
-            </div>
+          <div id="quiz-container">
+            <div class="question-tag">Neuroticism</div>
+                </div>
             <div class="likert-scale flex flex-row gap-40">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism1" name="neuroticism" value="1" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism2" name="neuroticism" value="2" required> 
@@ -235,9 +235,9 @@
               </div>  
         </div>
         <div class="flex flex-row justify-between">
-            <div>
-                <h4>Sensation-seeking:</h4>
-            </div>
+          <div id="quiz-container">
+            <div class="question-tag">Sensation-Seeking</div>
+                </div>
             <div class="likert-scale flex flex-row gap-40">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking1" name="sensation-seeking" value="1" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking2" name="sensation-seeking" value="2" required> 
@@ -247,9 +247,9 @@
                </div>  
         </div>
         <div class="flex flex-row justify-between">
-            <div>
-                <h4>impulsiveness:</h4>
-            </div>
+          <div id="quiz-container">
+            <div class="question-tag">Impulsiveness</div>
+                </div>
             <div class="likert-scale flex flex-row gap-40">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness1" name="impulsiveness" value="1" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness2" name="impulsiveness" value="2" required> 
@@ -259,9 +259,9 @@
                </div>  
         </div>
         <div class="flex flex-row justify-between">
-            <div>
-                <h4>optimism:</h4>
-            </div>
+          <div id="quiz-container">
+            <div class="question-tag">Optimism</div>
+              </div>
             <div class="likert-scale flex flex-row gap-40">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism1" name="optimism" value="1" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism2" name="optimism" value="2" required> 
@@ -275,8 +275,8 @@
 </form>
     <form id="form" class="flex sm:hidden flex-col gap-10 p-10 justify-between">
         <div class="flex flex-col gap-5 justify-between">
-            <div>
-                <h4 for="openness">Openness to Experience:</h4>
+              <div id="quiz-container">
+                <div for="openness" class="question-tag">Openness to Experience</div>
             </div>
          
             <div class="likert-scale flex flex-row gap-20">
@@ -289,8 +289,8 @@
             </div>  
         </div>
         <div class="flex flex-col gap-5 justify-between">
-            <div>
-                <h4>Conscientiousness/Orderly:</h4>
+          <div id="quiz-container">
+            <div class="question-tag">Conscientiousness</div>
             </div>
             <div class="likert-scale flex flex-row gap-20">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness1" name="conscientiousness" value="1" required> 
@@ -301,8 +301,8 @@
               </div>  
         </div>
         <div class="flex flex-col gap-5 justify-between">
-            <div>
-                <h4>Extraversion:</h4>
+            <div id="quiz-container">
+        <div class="question-tag">Extraversion</div>
             </div>
             <div class="likert-scale flex flex-row gap-20">
 
@@ -314,8 +314,8 @@
                </div>  
         </div>
         <div class="flex flex-col gap-5 justify-between">
-            <div>
-                <h4>Agreeableness:</h4>
+            <div id="quiz-container">
+        <div class="question-tag">Agreeableness</div>
             </div>
             <div class="likert-scale flex flex-row gap-20">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness1" name="agreeableness" value="1" required> 
@@ -326,8 +326,8 @@
                 </div>  
         </div>
         <div class="flex flex-col gap-5 justify-between">
-            <div>
-                <h4>Neuroticism/Anxious:</h4>
+            <div id="quiz-container">
+        <div class="question-tag">Neuroticism</div>
             </div>
             <div class="likert-scale flex flex-row gap-20">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism1" name="neuroticism" value="1" required> 
@@ -338,8 +338,8 @@
               </div>  
         </div>
         <div class="flex flex-col gap-5 justify-between">
-            <div>
-                <h4>Sensation-seeking:</h4>
+            <div id="quiz-container">
+        <div class="question-tag">Sensation-Seeking</div>
             </div>
             <div class="likert-scale flex flex-row gap-20">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking1" name="sensation-seeking" value="1" required> 
@@ -350,8 +350,8 @@
                </div>  
         </div>
         <div class="flex flex-col gap-5 justify-between">
-            <div>
-                <h4>impulsiveness:</h4>
+            <div id="quiz-container">
+        <div class="question-tag">Impulsiveness</div>
             </div>
             <div class="likert-scale flex flex-row gap-20">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness1" name="impulsiveness" value="1" required> 
@@ -361,6 +361,18 @@
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness5" name="impulsiveness" value="5" required> 
                </div>  
         </div>
+        <div class="flex flex-row justify-between">
+          <div id="quiz-container">
+        <div class="question-tag">Optimism</div>
+          </div>
+          <div class="likert-scale flex flex-row gap-40">
+              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism1" name="optimism" value="1" required> 
+              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism2" name="optimism" value="2" required> 
+              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism3" name="optimism" value="3" required> 
+              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism4" name="optimism" value="4" required> 
+              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism5" name="optimism" value="5" required> 
+            </div>  
+      </div>
         <div class="flex flex-row gap-5 justify-between">
        <input type="submit" value="Predict Temperament"
       class="border-2 rounded-md p-2 mx-auto hover:border-black hover:bg-black bg-white text-black w-6/12 text-sm sm:text-md cursor-pointer  hover:text-white">
@@ -485,196 +497,6 @@
   </footer>
 </main>
 </body>
- <script>
-// Wrap the JavaScript code inside a DOMContentLoaded event listener to ensure the form element is loaded
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('form');
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const formData = new FormData(form);
-
-    fetch('/', {
-      method: 'POST',
-      body: formData
-    })
-      .then(response => response.json())
-      .then(data => {
-        // Create and populate HTML elements for the result message
-        const resultMessageElement = document.createElement('p');
-        resultMessageElement.classList.add("sm:text-center", "text-sm", "sm:text-md");
-        resultMessageElement.textContent = `Your predicted temperament type is ${data.resultMessage}`;
-
-        document.getElementById('result-message').appendChild(resultMessageElement);
-
-        // Create and populate HTML elements for the result message dialog
-        const resultMessageElementDialog = document.createElement('p');
-        resultMessageElementDialog.classList.add("sm:text-justify", "text-sm", "text-bold", "sm:text-3xl");
-        resultMessageElementDialog.textContent = `Your predicted temperament type is ${data.resultMessage}`;
-
-        document.getElementById('result-message-dialog').appendChild(resultMessageElementDialog);
-
-        // Handle different temperament results using an if statement
-        if (data.resultMessage === "Sanguine") {// Create and populate HTML elements for the Sanguine temperament description
-          const sanguineDescriptionElement = document.createElement('div');
-          sanguineDescriptionElement.classList.add("flex", "flex-col", "gap-5");
-          
-          const sanguineHeadingElement = document.createElement('p');
-          sanguineHeadingElement.classList.add("text-sm", "text-bold", "sm:text-lg", "text-justify", "data-aos", "fade-left");
-          sanguineHeadingElement.textContent = "The Sanguine Temperament:";
-          
-          const sanguineDescriptionListElement1 = document.createElement('li');
-          sanguineDescriptionListElement1.classList.add("text-sm", "sm:text-md", "text-justify", "data-aos", "fade-left");
-          sanguineDescriptionListElement1.textContent = "Sanguine individuals are known for their optimism, enthusiasm, and outgoing nature. They are social butterflies, effortlessly drawing others in with their infectious laughter and vivacious energy. Adaptable and easygoing, they embrace new experiences and readily adjust to change. Sanguines excel at communication, often using humor and storytelling to connect with others. Their positive outlook and carefree spirit make them naturally charismatic leaders.";
-          
-          const sanguineDescriptionListElement2 = document.createElement('li');
-          sanguineDescriptionListElement2.classList.add("text-sm", "sm:text-md", "text-justify", "data-aos", "fade-left");
-          sanguineDescriptionListElement2.textContent = "Strengths: Optimistic, enthusiastic, adaptable, communicative, charismatic, social";
-          
-          const sanguineDescriptionListElement3 = document.createElement('li');
-          sanguineDescriptionListElement3.classList.add("text-sm", "sm:text-md", "text-justify", "data-aos", "fade-left");
-          sanguineDescriptionListElement3.textContent = "Challenges: Can be easily distracted, impulsive, lacking focus, prone to boredom";
-          
-          // Add the description elements to the container div
-          sanguineDescriptionElement.appendChild(sanguineHeadingElement);
-          sanguineDescriptionElement.appendChild(sanguineDescriptionListElement1);
-          sanguineDescriptionElement.appendChild(sanguineDescriptionListElement2);
-          sanguineDescriptionElement.appendChild(sanguineDescriptionListElement3);
-          
-          // Append the container div to the appropriate DOM element
-          document.getElementById('temperament-content').appendChild(sanguineDescriptionElement);
-          
-        } else if (data.resultMessage === "Melancholic") {
-          // ... update the DOM with specific content for Melancholic temperament ...
-          // Create and populate HTML elements for the Melancholic temperament description
-const melancholicDescriptionElement = document.createElement('div');
-melancholicDescriptionElement.classList.add("flex", "flex-col", "gap-5");
-
-const melancholicHeadingElement = document.createElement('p');
-melancholicHeadingElement.classList.add("text-sm", "text-bold", "sm:text-lg", "text-justify", "data-aos", "fade-left");
-melancholicHeadingElement.textContent = "The Melancholic Temperament:";
-
-const melancholicDescriptionListElement1 = document.createElement('li');
-melancholicDescriptionListElement1.classList.add("text-sm", "sm:text-md", "text-justify", "data-aos", "fade-left");
-melancholicDescriptionListElement1.textContent = "Melancholic individuals are known for their thoughtful and analytical nature. They are introspective and introverted, preferring solitude and reflection to large social gatherings. Melancholics have a deep appreciation for beauty and art, often possessing a creative streak that manifests in various forms. Their perfectionistic tendencies and desire for order can sometimes lead to challenges with procrastination and indecisiveness.";
-
-const melancholicDescriptionListElement2 = document.createElement('li');
-melancholicDescriptionListElement2.classList.add("text-sm", "sm:text-md", "text-justify", "data-aos", "fade-left");
-melancholicDescriptionListElement2.textContent = "Strengths: Deep thinkers, analytical, creative, introspective, perfectionistic";
-
-const melancholicDescriptionListElement3 = document.createElement('li');
-melancholicDescriptionListElement3.classList.add("text-sm", "sm:text-md", "text-justify", "data-aos", "fade-left");
-melancholicDescriptionListElement3.textContent = "Challenges: Introverted, perfectionistic, prone to procrastination and indecisiveness";
-
-// Add the description elements to the container div
-melancholicDescriptionElement.appendChild(melancholicHeadingElement);
-melancholicDescriptionElement.appendChild(melancholicDescriptionListElement1);
-melancholicDescriptionElement.appendChild(melancholicDescriptionListElement2);
-melancholicDescriptionElement.appendChild(melancholicDescriptionListElement3);
-
-// Append the container div to the appropriate DOM element
-document.getElementById('temperament-content').appendChild(melancholicDescriptionElement);
-
-        } else if (data.resultMessage === "Phlegmatic") {
-          // ... update the DOM with specific content for Phlegmatic temperament ...
-          // Create and populate HTML elements for the Phlegmatic temperament description
-  const phlegmaticDescriptionElement = document.createElement('div');
-  phlegmaticDescriptionElement.classList.add("flex", "flex-col", "gap-5");
-
-  const phlegmaticHeadingElement = document.createElement('p');
-  phlegmaticHeadingElement.classList.add("text-sm", "text-bold", "sm:text-lg", "text-justify", "data-aos", "fade-left");
-  phlegmaticHeadingElement.textContent = "The Phlegmatic Temperament:";
-
-  const phlegmaticDescriptionListElement1 = document.createElement('li');
-  phlegmaticDescriptionListElement1.classList.add("text-sm", "sm:text-md", "text-justify", "data-aos", "fade-left");
-  phlegmaticDescriptionListElement1.textContent = "Phlegmatic individuals are known for their calm and peaceful nature. They are easygoing and adaptable, preferring harmony and avoiding conflict. Phlegmatics are reliable and dependable, often serving as the mediators and peacemakers within their social circles. They value stability and routine, and often find comfort in familiar surroundings.";
-
-  const phlegmaticDescriptionListElement2 = document.createElement('li');
-  phlegmaticDescriptionListElement2.classList.add("text-sm", "sm:text-md", "text-justify", "data-aos", "fade-left");
-  phlegmaticDescriptionListElement2.textContent = "Strengths: Calm, peaceful, easygoing, reliable, dependable, good mediators";
-
-  const phlegmaticDescriptionListElement3 = document.createElement('li');
-  phlegmaticDescriptionListElement3.classList.add("text-sm", "sm:text-md", "text-justify", "data-aos", "fade-left");
-  phlegmaticDescriptionListElement3.textContent = "Challenges: Can be seen as passive or uninterested, prone to procrastination, may lack initiative";
-
-  // Add the description elements to the container div
-  phlegmaticDescriptionElement.appendChild(phlegmaticHeadingElement);
-  phlegmaticDescriptionElement.appendChild(phlegmaticDescriptionListElement1);
-  phlegmaticDescriptionElement.appendChild(phlegmaticDescriptionListElement2);
-  phlegmaticDescriptionElement.appendChild(phlegmaticDescriptionListElement3);
-
-  // Append the container div to the appropriate DOM element
-  document.getElementById('temperament-content').appendChild(phlegmaticDescriptionElement);
-
-        } else if (data.resultMessage === "Choleric") {
-          // ... update the DOM with specific content for Choleric temperament ...
-          // Create and populate HTML elements for the Choleric temperament description
-const cholericDescriptionElement = document.createElement('div');
-cholericDescriptionElement.classList.add("flex", "flex-col", "gap-5");
-
-const cholericHeadingElement = document.createElement('p');
-cholericHeadingElement.classList.add("text-sm", "text-bold", "sm:text-lg", "text-justify", "data-aos", "fade-left");
-cholericHeadingElement.textContent = "The Choleric Temperament:";
-
-const cholericDescriptionListElement1 = document.createElement('li');
-cholericDescriptionListElement1.classList.add("text-sm", "sm:text-md", "text-justify", "data-aos", "fade-left");
-cholericDescriptionListElement1.textContent = "Choleric individuals are known for their energetic and ambitious nature. They are driven by a strong desire for achievement and possess a natural leadership ability. Cholerics are decisive and action-oriented, often taking charge and pushing others to achieve their goals. Their direct communication style and passion for their work can sometimes come across as assertive or impatient.";
-
-const cholericDescriptionListElement2 = document.createElement('li');
-cholericDescriptionListElement2.classList.add("text-sm", "sm:text-md", "text-justify", "data-aos", "fade-left");
-cholericDescriptionListElement2.textContent = "Strengths: Energetic, ambitious, decisive, action-oriented, natural leaders";
-
-const cholericDescriptionListElement3 = document.createElement('li');
-cholericDescriptionListElement3.classList.add("text-sm", "sm:text-md", "text-justify", "data-aos", "fade-left");
-cholericDescriptionListElement3.textContent = "Challenges: Can be impatient and assertive, prone to conflict, may struggle with delegation";
-
-// Add the description elements to the container div
-cholericDescriptionElement.appendChild(cholericHeadingElement);
-cholericDescriptionElement.appendChild(cholericDescriptionListElement1);
-cholericDescriptionElement.appendChild(cholericDescriptionListElement2);
-cholericDescriptionElement.appendChild(cholericDescriptionListElement3);
-
-// Append the container div to the appropriate DOM element
-document.getElementById('temperament-content').appendChild(cholericDescriptionElement);
-
-        } else {
-          // Update the DOM for unknown temperament
-          const unknownElement = document.createElement('p');
-          unknownElement.textContent = `We could not determine your temperament based on the results.`;
-          document.getElementById('result-message').appendChild(unknownElement);
-        }
-      });
-      
-  });
-  
-});
-
-           //using the modal 
-    const dialog = document.querySelector("dialog");
-    const showButton = document.querySelector("dialog + button");
-    const closeButton = document.querySelector("dialog button");
-
-    // "Show the dialog" button opens the dialog modally
-    showButton.addEventListener("click", () => {
-        dialog.showModal();
-    });
-
-    // "Close" button closes the dialog
-    closeButton.addEventListener("click", () => {
-        dialog.close();
-    });
-
-   // Grab HTML Elements
-   const btn = document.querySelector("button.mobile-menu-button");
-   const menu = document.querySelector(".mobile-menu");
-
-   // Add Event Listeners
-   btn.addEventListener("click", () => {
-       menu.classList.toggle("hidden");
-   });
-    //to start using the libary
-    AOS.init(
-    );
-   
-    </script>
+<script type="text/javascript"
+src="{{ url_for('static', filename='app.js') }}"></script>
 </html>
