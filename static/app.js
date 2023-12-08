@@ -1,4 +1,5 @@
 
+
 // Wrap the JavaScript code inside a DOMContentLoaded event listener to ensure the form element is loaded
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.getElementById('form');
@@ -264,29 +265,8 @@ window.onload = function() {
   }
 };
 
-           //using the modal 
-    const dialog = document.querySelector("dialog");
-    const showButton = document.querySelector("dialog + button");
-    const closeButton = document.querySelector("dialog button");
 
-    // "Show the dialog" button opens the dialog modally
-    showButton.addEventListener("click", () => {
-        dialog.showModal();
-    });
 
-    // "Close" button closes the dialog
-    closeButton.addEventListener("click", () => {
-        dialog.close();
-    });
-
-   // Grab HTML Elements
-   const btn = document.querySelector("button.mobile-menu-button");
-   const menu = document.querySelector(".mobile-menu");
-
-   // Add Event Listeners
-   btn.addEventListener("click", () => {
-       menu.classList.toggle("sm:hidden");
-   });
     //to start using the libary
     AOS.init(
     );
