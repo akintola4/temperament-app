@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href={{url_for('static', filename='logo-2.svg')}}>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/143f4c7aad.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -42,7 +43,7 @@
           class="px-3 outline-none mobile-menu-button rounded-md p-2 border sm:hidden flex border-black hover:bg-none hover:text-white">
           <i class="fa-solid fa-bars text-white"></i></button>
   </nav>
-  <div class="hidden mobile-menu ">
+  <div class="hidden  mobile-menu ">
       <ul class="mx-auto pl-10  flex flex-col gap-2">
           <li><a class="relative text-lg focus:text-black  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                   href="">Learn</a></li>
@@ -497,6 +498,15 @@
   </footer>
 </main>
 </body>
+<script>
+    // Grab HTML Elements
+   const btn = document.querySelector("button.mobile-menu-button");
+   const menu = document.querySelector(".mobile-menu");
+   // Add Event Listeners
+   btn.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+});
+</script>
 <script type="text/javascript"
 src="{{ url_for('static', filename='app.js') }}"></script>
 </html>
