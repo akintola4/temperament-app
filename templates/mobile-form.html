@@ -1,0 +1,104 @@
+    <form id="form" onsubmit="submitFormReturn();return false;" class="flex lg:hidden flex-col gap-10 p-10 justify-between">
+        <div class="flex flex-col gap-5 justify-between">
+              <div id="quiz-container">
+                <div for="openness" class="question-tag">Openness to Experience</div>
+            </div>
+         
+            <div class="likert-scale flex flex-row gap-10">
+
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness1" name="openness" value="1" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness2" name="openness" value="2" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness3" name="openness" value="3" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness4" name="openness" value="4" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness5" name="openness" value="5" required> 
+            </div>  
+        </div>
+        <div class="flex flex-col gap-5 justify-between">
+          <div id="quiz-container">
+            <div class="question-tag">Conscientiousness</div>
+            </div>
+            <div class="likert-scale flex flex-row gap-10">
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness1" name="conscientiousness" value="1" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness2" name="conscientiousness" value="2" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness3" name="conscientiousness" value="3" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness4" name="conscientiousness" value="4" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness5" name="conscientiousness" value="5" required> 
+              </div>  
+        </div>
+        <div class="flex flex-col gap-5 justify-between">
+            <div id="quiz-container">
+        <div class="question-tag">Extraversion</div>
+            </div>
+            <div class="likert-scale flex flex-row gap-10">
+
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion1" name="extraversion" value="1" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion2" name="extraversion" value="2" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion3" name="extraversion" value="3" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion4" name="extraversion" value="4" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion5" name="extraversion" value="5" required> 
+               </div>  
+        </div>
+        <div class="flex flex-col gap-5 justify-between">
+            <div id="quiz-container">
+        <div class="question-tag">Agreeableness</div>
+            </div>
+            <div class="likert-scale flex flex-row gap-10">
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness1" name="agreeableness" value="1" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness2" name="agreeableness" value="2" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness3" name="agreeableness" value="3" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness4" name="agreeableness" value="4" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness5" name="agreeableness" value="5" required> 
+                </div>  
+        </div>
+        <div class="flex flex-col gap-5 justify-between">
+            <div id="quiz-container">
+        <div class="question-tag">Neuroticism</div>
+            </div>
+            <div class="likert-scale flex flex-row gap-10">
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism1" name="neuroticism" value="1" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism2" name="neuroticism" value="2" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism3" name="neuroticism" value="3" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism4" name="neuroticism" value="4" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism5" name="neuroticism" value="5" required> 
+              </div>  
+        </div>
+        <div class="flex flex-col gap-5 justify-between">
+            <div id="quiz-container">
+        <div class="question-tag">Sensation-Seeking</div>
+            </div>
+            <div class="likert-scale flex flex-row gap-10">
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking1" name="sensation-seeking" value="1" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking2" name="sensation-seeking" value="2" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking3" name="sensation-seeking" value="3" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking4" name="sensation-seeking" value="4" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking5" name="sensation-seeking" value="5" required> 
+               </div>  
+        </div>
+        <div class="flex flex-col gap-5 justify-between">
+            <div id="quiz-container">
+        <div class="question-tag">Impulsiveness</div>
+            </div>
+            <div class="likert-scale flex flex-row gap-10">
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness1" name="impulsiveness" value="1" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness2" name="impulsiveness" value="2" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness3" name="impulsiveness" value="3" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness4" name="impulsiveness" value="4" required> 
+                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness5" name="impulsiveness" value="5" required> 
+               </div>  
+        </div>
+        <div class="flex flex-col justify-between">
+          <div id="quiz-container">
+        <div class="question-tag">Optimism</div>
+          </div>
+          <div class="likert-scale flex flex-row gap-10">
+              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism1" name="optimism" value="1" required> 
+              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism2" name="optimism" value="2" required> 
+              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism3" name="optimism" value="3" required> 
+              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism4" name="optimism" value="4" required> 
+              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism5" name="optimism" value="5" required> 
+            </div>  
+      </div>
+        <div class="flex flex-row gap-5 justify-between">
+          <input type="submit" value="Predict Temperament" 
+          class="border-2 rounded-md p-2 mx-auto hover:border-black hover:bg-black bg-white text-black w-6/12 text-sm lg:text-md cursor-pointer hover:text-white">
+</form>

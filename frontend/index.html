@@ -127,11 +127,11 @@
             <h4 class="text-2xl text-center sm:text-left sm:text-4xl font-bold" data-aos="fade-right">How it works
             </h4>
             <div class="flex flex-col gap-5">
-                <li class="text-sm sm:text-md text-justify" data-aos="fade-left">Read the question</li>
-                <li class="text-sm sm:text-md text-justify" data-aos="fade-left">fill in the answer by selecting the one
+                <li class="text-sm sm:text-md text-justify" >Read the question</li>
+                <li class="text-sm sm:text-md text-justify" >fill in the answer by selecting the one
                     you feel is right</li>
-                <li class="text-sm sm:text-md text-justify" data-aos="fade-left">select your option ranging from (Strongly Disagree, Disagree, Neutral, Agree, Strongly Agree)</li>
-                <li class="text-sm sm:text-md text-justify" data-aos="fade-left">when done click on the submit button
+                <li class="text-sm sm:text-md text-justify" >select your option ranging from (Strongly Disagree, Disagree, Neutral, Agree, Strongly Agree)</li>
+                <li class="text-sm sm:text-md text-justify" >when done click on the submit button
                 </li>
                 
             </div>
@@ -279,7 +279,7 @@
                         <h4 for="openness">Openness to Experience:</h4>
                     </div>
                  
-                    <div class="likert-scale flex flex-row gap-20">
+                    <div class="likert-scale flex flex-row gap-10">
 
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness1" name="openness" value="1" required> 
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness2" name="openness" value="2" required> 
@@ -292,7 +292,7 @@
                     <div>
                         <h4>Conscientiousness/Orderly:</h4>
                     </div>
-                    <div class="likert-scale flex flex-row gap-20">
+                    <div class="likert-scale flex flex-row gap-10">
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness1" name="conscientiousness" value="1" required> 
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness2" name="conscientiousness" value="2" required> 
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness3" name="conscientiousness" value="3" required> 
@@ -304,7 +304,7 @@
                     <div>
                         <h4>Extraversion:</h4>
                     </div>
-                    <div class="likert-scale flex flex-row gap-20">
+                    <div class="likert-scale flex flex-row gap-10">
 
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion1" name="extraversion" value="1" required> 
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion2" name="extraversion" value="2" required> 
@@ -317,7 +317,7 @@
                     <div>
                         <h4>Agreeableness:</h4>
                     </div>
-                    <div class="likert-scale flex flex-row gap-20">
+                    <div class="likert-scale flex flex-row gap-10">
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness1" name="agreeableness" value="1" required> 
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness2" name="agreeableness" value="2" required> 
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness3" name="agreeableness" value="3" required> 
@@ -329,7 +329,7 @@
                     <div>
                         <h4>Neuroticism/Anxious:</h4>
                     </div>
-                    <div class="likert-scale flex flex-row gap-20">
+                    <div class="likert-scale flex flex-row gap-10">
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism1" name="neuroticism" value="1" required> 
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism2" name="neuroticism" value="2" required> 
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism3" name="neuroticism" value="3" required> 
@@ -341,7 +341,7 @@
                     <div>
                         <h4>Sensation-seeking:</h4>
                     </div>
-                    <div class="likert-scale flex flex-row gap-20">
+                    <div class="likert-scale flex flex-row gap-10">
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking1" name="sensation-seeking" value="1" required> 
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking2" name="sensation-seeking" value="2" required> 
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking3" name="sensation-seeking" value="3" required> 
@@ -353,7 +353,7 @@
                     <div>
                         <h4>impulsiveness:</h4>
                     </div>
-                    <div class="likert-scale flex flex-row gap-20">
+                    <div class="likert-scale flex flex-row gap-10">
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness1" name="impulsiveness" value="1" required> 
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness2" name="impulsiveness" value="2" required> 
                         <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness3" name="impulsiveness" value="3" required> 
@@ -506,7 +506,14 @@
 
 <script>
 
+    // Grab HTML Elements
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
 
+    // Add Event Listeners
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
 
     //using the modal 
     const dialog = document.querySelector("dialog");
@@ -523,41 +530,27 @@
         dialog.close();
     });
 
-    const predictions = data.individualPredictions;
-    const labels = [];
-    const dataValues = [];
-    
-    for (const key in predictions) {
-      labels.push(key);
-      dataValues.push(predictions[key]);
-    }
-    
+
     //to start using the libary
     AOS.init(
     );
     const ctx2 = document.getElementById('myChart-2');
     new Chart(ctx2, {
-        type: 'pie',
+        type: 'doughnut',
         data: {
-          labels: labels,
-          datasets: [{
-            backgroundColor: ['#f44336', '#3f51b5', '#4caf50', '#ffeb3b', '#9c27b0'], // Customize colors
-            data: dataValues
-          }]
+            labels: ["melancholic ", "phlegamatic", " choleric ", "Sanguine"],
+            datasets: [{
+                labels: ["melancholic ", "phlegamatic", " choleric ", "Sanguine"],
+                data: [1000, 2000, 1500, 1000],
+               backgroundColor:[
+                '#75CD72','#71CAFA',
+                '#EB3E3E','#FFD600',
+               ],
+                color:'#fff',
+                tension: 0.3,
+            }]
         },
-        options: {
-          title: {
-            display: true,
-            text: 'Individual Temperament Predictions'
-          },
-          legend: {
-            display: true,
-            position: 'bottom'
-          }
-        }
-      });
-      
-
+    });
          // Wrap the JavaScript code inside a DOMContentLoaded event listener to ensure the form element is loaded
          const form = document.getElementById('form');
          form.addEventListener('submit', (event) => {

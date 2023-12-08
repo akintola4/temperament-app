@@ -12,7 +12,7 @@
 </head>
 <body>
   <header
-  class=" sm:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 inset-x-0 top-0 z-10  ">
+  class=" lg:px-20 fixed   bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-10 inset-x-0 top-0 z-10  ">
 
   <nav class="flex items-center justify-between p-4" aria-label="Global">
 
@@ -21,38 +21,36 @@
           <img src={{url_for('static', filename='logo-2.svg')}} alt="" class="w-3/12">
           <h4 class="font-semi-bold text-sm">temperament-test</h4>
       </div>
-      <ul class="hidden flex flex-row    sm:flex gap-12">
+      <ul class="hidden flex flex-row    lg:flex gap-12">
           <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-                  href="">Learn</a></li>
+                  href="https://docs.google.com/document/d/1ZvCKes3CD53BcKTs9GnLqeCnQUZn-myQfHEgZlV4lhI/edit?usp=sharing">Learn</a></li>
           <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                   href="">Research Paper</a></li>
-          <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-                  href="">Invest</a></li>
-          <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-                  href="">Github</a></li>
-      </ul>
-      <div class="nav-3 hidden sm:block">
-          <ul class="flex flex-row gap-5">
 
-              <a class="border-2 rounded-md p-2 hover:border-black hover:bg-black bg-white text-black   hover:text-white "
-                  href="">Share</a>
+          <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                  href="https://github.com/akintola4/temperament-app">Github</a></li>
+      </ul>
+      <div class="nav-3 hidden lg:block">
+          <ul class="flex flex-row gap-5">
+                  <a class="border-2 rounded-md p-2 hover:border-black hover:bg-black bg-white text-black   hover:text-white "
+                    target="_blank" rel="noopener noreferrer" data-size="large" href="https://twitter.com/intent/tweet?url=https://temperamentapp.onrender.com">Share</a>
           </ul>
       </div>
       <!-- mobile section -->
       <button
-          class="px-3 outline-none mobile-menu-button rounded-md p-2 border sm:hidden flex border-black hover:bg-none hover:text-white">
-          <i class="fa-solid fa-bars text-white"></i></button>
+          class="px-3 outline-none mobile-menu-button rounded-md p-2 border lg:hidden flex border-black hover:bg-none hover:text-white">
+          <i class="fa-solid fa-bars"></i></button>
   </nav>
   <div class="hidden  mobile-menu ">
       <ul class="mx-auto pl-10  flex flex-col gap-2">
-          <li><a class="relative text-lg focus:text-black  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-                  href="">Learn</a></li>
-          <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+          <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                  href="https://docs.google.com/document/d/1ZvCKes3CD53BcKTs9GnLqeCnQUZn-myQfHEgZlV4lhI/edit?usp=sharing">Learn</a></li>
+          <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                   href="">Research Paper</a></li>
-          <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+          <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
                   href="">Invest</a></li>
-          <li><a class="relative text-lg  w-fit block hover:text-white after:block after:content-[''] after:absolute after:h-[2px] after:bg-white after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-                  href="">Github</a></li>
+          <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                  href="https://github.com/akintola4/temperament-app">Github</a></li>
       </ul>
       <div class="nav-3 pl-8 p-4">
           <ul class="flex flex-row gap-5">
@@ -68,19 +66,19 @@
 </header>
 
 
-<main class="pt-32 sm:pt-40 gap-10 items-center justify-between  mx-10">
-  <div class="hero-section flex flex-col sm:flex-row gap-10 items-center justify-between ">
-      <div class="hero-2  sm:hidden" data-aos="zoom-in-left">
+<main class="pt-32 lg:pt-40 gap-10 items-center justify-between  mx-10">
+  <div class="hero-section flex flex-col lg:flex-row gap-10 items-center justify-between ">
+      <div class="hero-2  lg:hidden" data-aos="zoom-in-left">
         
           <img src={{url_for('static', filename='hero.svg')}} alt="">
       </div>
 
-      <div class="hero-1 flex flex-col gap-10 sm:w-10/12">
-          <h4 class="text-2xl text-center sm:text-left sm:text-6xl font-bold " data-aos="fade-right">Gain Valuable
+      <div class="hero-1 flex flex-col gap-10 lg:w-10/12">
+          <h4 class="text-2xl text-center lg:text-left lg:text-6xl font-bold " data-aos="fade-right">Gain Valuable
               Insights</h4>
 
-          <div class="sm:hidden flex flex-col gap-5">
-              <p class="text-sm text-justify sm:text-md sm:w-10/12" data-aos="fade-right">Embark on a journey of self-discovery
+          <div class="lg:hidden flex flex-col gap-5">
+              <p class="text-sm text-justify lg:text-md lg:w-10/12" data-aos="fade-right">Embark on a journey of self-discovery
                   and unlock your true
                   potential
                   with
@@ -91,16 +89,16 @@
                   confidence.
 
               </p>
-              <div class="flex  flex-row sm:flex-col gap-10" data-aos="fade-right">
+              <div class="flex  flex-row lg:flex-col gap-10" data-aos="fade-right">
                 <a class="border-2 rounded-md p-2 border-black hover:bg-black hover:text-white "
                 href="#section-2">Test your temperament</a>
-                  <a class="border-2 rounded-md p-2 hover:border-black hover:bg-black bg-white text-black  text-sm sm:text-md  hover:text-white "
+                  <a class="border-2 rounded-md p-2 hover:border-black hover:bg-black bg-white text-black  text-sm lg:text-md  hover:text-white "
                       href="">How it works</a>
               </div>
 
           </div>
 
-          <div class=" hidden sm:flex flex flex-col gap-10">
+          <div class=" hidden lg:flex flex flex-col gap-10">
               <p class="text-md w-10/12 text-justify" data-aos="fade-right">Embark on a journey of self-discovery
                   and unlock your true
                   potential with our scientifically validated temperament test. Our comprehensive assessment
@@ -119,37 +117,37 @@
 
           </div>
       </div>
-      <div class="hero-2 hidden sm:block" data-aos="zoom-in-left">
+      <div class="hero-2 hidden lg:block" data-aos="zoom-in-left">
           <img src={{url_for('static', filename='hero.svg')}} alt="" style="width: 150%;">
       </div>
   </div>
   <div id="section-1"
-      class="section-1 my-10 sm:my-20 gap-5 mx-auto sm:w-6/12 items-center text-center align-center flex flex-col">
-      <h4 class="text-2xl text-center sm:text-left sm:text-4xl font-bold" data-aos="fade-right">How it works
+      class="section-1 my-10 lg:my-20 gap-5 mx-auto lg:w-6/12 items-center text-center align-center flex flex-col">
+      <h4 class="text-2xl text-center lg:text-left lg:text-4xl font-bold" data-aos="fade-right">How it works
       </h4>
-      <div class="flex flex-col gap-5">
-          <li class="text-sm sm:text-md text-justify" data-aos="fade-left">Read the question</li>
-          <li class="text-sm sm:text-md text-justify" data-aos="fade-left">fill in the answer by selecting the one
+      <div class="flex flex-col gap-5" >
+          <li class="text-sm lg:text-md text-justify" >Read the question</li>
+          <li class="text-sm lg:text-md text-justify" >fill in the answer by selecting the one
               you feel is right</li>
-          <li class="text-sm sm:text-md text-justify" data-aos="fade-left">select your option ranging from (Strongly Disagree, Disagree, Neutral, Agree, Strongly Agree)</li>
-          <li class="text-sm sm:text-md text-justify" data-aos="fade-left">when done click on the submit button
+          <li class="text-sm lg:text-md text-justify" >select your option ranging from (Strongly Disagree, Disagree, Neutral, Agree, Strongly Agree)</li>
+          <li class="text-sm lg:text-md text-justify" >when done click on the submit button
           </li>
           
       </div>
 
   </div>
   <div id="section-2"
-      class="section-1 my-5 sm:my-20 mx-auto sm:w-6/12 items-center text-center align-center flex flex-col">
-      <h4 class="text-2xl text-center sm:text-left sm:text-4xl font-bold" data-aos="fade-right">Fill in the box
+      class="section-1 my-5 lg:my-20 mx-auto lg:w-6/12 items-center text-center align-center flex flex-col">
+      <h4 class="text-2xl text-center lg:text-left lg:text-4xl font-bold" data-aos="fade-right">Fill in the box
       </h4>
   </div>
-  <div id="section-2" class="section-2 my-10 sm:my-20 border-2 border-black" data-aos="zoom-in-left">
-    <form id="form" class=" hidden sm:flex flex-col gap-10 p-10 justify-between">
-        <div class="flex flex-row justify-between">
+  <div id="section-2" class="section-2 my-10 lg:my-20 border-2 border-black" data-aos="zoom-in-left">
+    <form id="form" class="flex flex-col gap-10 p-10 justify-between">
+        <div class="flex flex-col lg:flex-row  justify-between">
             <div>
                 <h4>questions</h4>
             </div>
-            <div class="likert-scale flex flex-row   gap-24">
+            <div class="likert-scale flex flex-row gap-20  lg:gap-24">
                 <div class="flex flex-col">
                     <label for="stronglyDisagree">Strongly Disagree</label>
 
@@ -172,12 +170,12 @@
                 </div>
             </div>
         </div>
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-col lg:flex-row  justify-between">
           <div id="quiz-container">
             <div for="openness" class="question-tag">Openness to Experience</div>
         </div>
          
-            <div class="likert-scale flex flex-row gap-40">
+            <div class="likert-scale flex flex-row gap-32 lg:gap-40">
 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness1" name="openness" value="1" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness2" name="openness" value="2" required> 
@@ -186,11 +184,11 @@
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness5" name="openness" value="5" required> 
             </div>  
         </div>
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-col lg:flex-row justify-between">
              <div id="quiz-container">
             <div class="question-tag">Conscientiousness</div>
             </div>
-            <div class="likert-scale flex flex-row gap-40">
+            <div class="likert-scale flex flex-row gap-32 lg:gap-40">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness1" name="conscientiousness" value="1" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness2" name="conscientiousness" value="2" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness3" name="conscientiousness" value="3" required> 
@@ -198,11 +196,11 @@
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness5" name="conscientiousness" value="5" required> 
               </div>  
         </div>
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-col lg:flex-row justify-between">
           <div id="quiz-container">
             <div class="question-tag">Extraversion</div>
                 </div>
-            <div class="likert-scale flex flex-row gap-40">
+            <div class="likert-scale flex flex-row gap-32 lg:gap-40">
 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion1" name="extraversion" value="1" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion2" name="extraversion" value="2" required> 
@@ -211,11 +209,11 @@
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion5" name="extraversion" value="5" required> 
                </div>  
         </div>
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-col lg:flex-row justify-between">
           <div id="quiz-container">
             <div class="question-tag">Agreeableness</div>
                 </div>
-            <div class="likert-scale flex flex-row gap-40">
+            <div class="likert-scale flex flex-row gap-32 lg:gap-40">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness1" name="agreeableness" value="1" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness2" name="agreeableness" value="2" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness3" name="agreeableness" value="3" required> 
@@ -223,11 +221,11 @@
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness5" name="agreeableness" value="5" required> 
                 </div>  
         </div>
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-col lg:flex-row justify-between">
           <div id="quiz-container">
             <div class="question-tag">Neuroticism</div>
                 </div>
-            <div class="likert-scale flex flex-row gap-40">
+            <div class="likert-scale flex flex-row gap-32 lg:gap-40">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism1" name="neuroticism" value="1" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism2" name="neuroticism" value="2" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism3" name="neuroticism" value="3" required> 
@@ -235,11 +233,11 @@
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism5" name="neuroticism" value="5" required> 
               </div>  
         </div>
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-col lg:flex-row justify-between">
           <div id="quiz-container">
             <div class="question-tag">Sensation-Seeking</div>
                 </div>
-            <div class="likert-scale flex flex-row gap-40">
+            <div class="likert-scale flex flex-row gap-32 lg:gap-40">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking1" name="sensation-seeking" value="1" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking2" name="sensation-seeking" value="2" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking3" name="sensation-seeking" value="3" required> 
@@ -247,11 +245,11 @@
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking5" name="sensation-seeking" value="5" required> 
                </div>  
         </div>
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-col lg:flex-row justify-between">
           <div id="quiz-container">
             <div class="question-tag">Impulsiveness</div>
                 </div>
-            <div class="likert-scale flex flex-row gap-40">
+            <div class="likert-scale flex flex-row gap-32 lg:gap-40">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness1" name="impulsiveness" value="1" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness2" name="impulsiveness" value="2" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness3" name="impulsiveness" value="3" required> 
@@ -259,11 +257,11 @@
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness5" name="impulsiveness" value="5" required> 
                </div>  
         </div>
-        <div class="flex flex-row justify-between">
+        <div class="flex flex-col lg:flex-row justify-between">
           <div id="quiz-container">
             <div class="question-tag">Optimism</div>
               </div>
-            <div class="likert-scale flex flex-row gap-40">
+            <div class="likert-scale flex flex-row gap-32 lg:gap-40">
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism1" name="optimism" value="1" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism2" name="optimism" value="2" required> 
                 <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism3" name="optimism" value="3" required> 
@@ -272,138 +270,55 @@
               </div>  
         </div>
        <input type="submit" value="Predict Temperament"
-      class="border-2 rounded-md p-2 mx-auto hover:border-black hover:bg-black bg-white text-black w-6/12 text-sm sm:text-md cursor-pointer hover:text-white">
+      class="border-2 rounded-md p-2 mx-auto hover:border-black hover:bg-black bg-white text-black w-6/12 text-sm lg:text-md cursor-pointer hover:text-white">
 </form>
-    <form id="form" class="flex sm:hidden flex-col gap-10 p-10 justify-between">
-        <div class="flex flex-col gap-5 justify-between">
-              <div id="quiz-container">
-                <div for="openness" class="question-tag">Openness to Experience</div>
-            </div>
-         
-            <div class="likert-scale flex flex-row gap-20">
 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness1" name="openness" value="1" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness2" name="openness" value="2" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness3" name="openness" value="3" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness4" name="openness" value="4" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="openness5" name="openness" value="5" required> 
-            </div>  
-        </div>
-        <div class="flex flex-col gap-5 justify-between">
-          <div id="quiz-container">
-            <div class="question-tag">Conscientiousness</div>
-            </div>
-            <div class="likert-scale flex flex-row gap-20">
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness1" name="conscientiousness" value="1" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness2" name="conscientiousness" value="2" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness3" name="conscientiousness" value="3" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness4" name="conscientiousness" value="4" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="conscientiousness5" name="conscientiousness" value="5" required> 
-              </div>  
-        </div>
-        <div class="flex flex-col gap-5 justify-between">
-            <div id="quiz-container">
-        <div class="question-tag">Extraversion</div>
-            </div>
-            <div class="likert-scale flex flex-row gap-20">
-
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion1" name="extraversion" value="1" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion2" name="extraversion" value="2" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion3" name="extraversion" value="3" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion4" name="extraversion" value="4" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="extraversion5" name="extraversion" value="5" required> 
-               </div>  
-        </div>
-        <div class="flex flex-col gap-5 justify-between">
-            <div id="quiz-container">
-        <div class="question-tag">Agreeableness</div>
-            </div>
-            <div class="likert-scale flex flex-row gap-20">
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness1" name="agreeableness" value="1" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness2" name="agreeableness" value="2" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness3" name="agreeableness" value="3" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness4" name="agreeableness" value="4" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="agreeableness5" name="agreeableness" value="5" required> 
-                </div>  
-        </div>
-        <div class="flex flex-col gap-5 justify-between">
-            <div id="quiz-container">
-        <div class="question-tag">Neuroticism</div>
-            </div>
-            <div class="likert-scale flex flex-row gap-20">
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism1" name="neuroticism" value="1" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism2" name="neuroticism" value="2" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism3" name="neuroticism" value="3" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism4" name="neuroticism" value="4" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="neuroticism5" name="neuroticism" value="5" required> 
-              </div>  
-        </div>
-        <div class="flex flex-col gap-5 justify-between">
-            <div id="quiz-container">
-        <div class="question-tag">Sensation-Seeking</div>
-            </div>
-            <div class="likert-scale flex flex-row gap-20">
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking1" name="sensation-seeking" value="1" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking2" name="sensation-seeking" value="2" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking3" name="sensation-seeking" value="3" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking4" name="sensation-seeking" value="4" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="sensation-seeking5" name="sensation-seeking" value="5" required> 
-               </div>  
-        </div>
-        <div class="flex flex-col gap-5 justify-between">
-            <div id="quiz-container">
-        <div class="question-tag">Impulsiveness</div>
-            </div>
-            <div class="likert-scale flex flex-row gap-20">
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness1" name="impulsiveness" value="1" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness2" name="impulsiveness" value="2" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness3" name="impulsiveness" value="3" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness4" name="impulsiveness" value="4" required> 
-                <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="impulsiveness5" name="impulsiveness" value="5" required> 
-               </div>  
-        </div>
-        <div class="flex flex-row justify-between">
-          <div id="quiz-container">
-        <div class="question-tag">Optimism</div>
-          </div>
-          <div class="likert-scale flex flex-row gap-40">
-              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism1" name="optimism" value="1" required> 
-              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism2" name="optimism" value="2" required> 
-              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism3" name="optimism" value="3" required> 
-              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism4" name="optimism" value="4" required> 
-              <input class="border-gray-300 rounded-md cursor-pointer" type="radio" id="optimism5" name="optimism" value="5" required> 
-            </div>  
-      </div>
-        <div class="flex flex-row gap-5 justify-between">
-       <input type="submit" value="Predict Temperament"
-      class="border-2 rounded-md p-2 mx-auto hover:border-black hover:bg-black bg-white text-black w-6/12 text-sm sm:text-md cursor-pointer  hover:text-white">
-</form>
 </div>
 </div>
 
-  <div class="results flex flex-col gap-10 border-2 border-black p-5 sm:p-10 sm:w-8/12 mx-auto"
+  <div class="results flex flex-col gap-10 border-2 border-black p-5 lg:p-10 lg:w-8/12 mx-auto"
       data-aos="zoom-in-left">
-      <h4 class="text-lg text-center sm:text-left sm:text-2xl font-bold">RESULT</h4>
+      <h4 class="text-lg text-center lg:text-left lg:text-2xl font-bold">RESULT</h4>
       <div id="result-message">
       </div>
-      <p class="sm:text-center text-sm sm:text-md">
+      <p class="text-center text-sm lg:text-md">
           this was made possible with the help of machine learning</p>
-      <div class="flex flex-col sm:flex-row gap-5 justify-between">
+      <div class="flex flex-row gap-5 justify-between">
           <div class="flex flex-row gap-5 items-center text-1xl ">
               <h4>SHARE</h4>
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-              <i class="fa fa-facebook" aria-hidden="true"></i>
+              <a 
+href="https://www.linkedin.com/sharing/share-offsite/?url=https://temperamentapp.onrender.com" 
+target="_blank" 
+rel="noopener noreferrer"
+> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+<a
+class="twitter-share-button"
+target="_blank"
+rel="noopener noreferrer"
+data-size="large"
+href="https://twitter.com/intent/tweet?url=https://temperamentapp.onrender.com"
+>
+<i class="fa fa-twitter" aria-hidden="true"></i>
+</a>
+<a
+href="https://www.facebook.com/sharer/sharer.php?u=https://temperamentapp.onrender.com" 
+target="_blank"
+rel="noopener noreferrer"
+>
+<i class="fa fa-facebook" aria-hidden="true"></i>
+</a>    
+             
+              
           </div>
           <div>
               <dialog
                   class="w-10/12 h-4/6 bg-gray-400 rounded-md  justify-between bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-0 border border-gray-100 p-5 " >
                   <div class="flex flex-row justify-between">
-                      <h4 class="text-lg text-center sm:text-left sm:text-2xl font-bold">RESULT</h4>
+                      <h4 class="text-lg text-center lg:text-left lg:text-2xl font-bold">RESULT</h4>
                       <button autofocus><i class="fa fa-close text-black" aria-hidden="true"></i></button>
                   </div>
 
-                  <div class="results flex flex-col gap-10 sm:p-10 " data-aos="zoom-in-left">
+                  <div class="results flex flex-col gap-10 lg:p-10 " data-aos="zoom-in-left">
                     <div id="result-message-dialog">
                     </div>
                   <div id="temperament-content"></div>
@@ -412,31 +327,31 @@
                   <div class="col-4-1 flex flex-col gap-5 items-center place-content-between">
                       <h4 class="text-2xl">Disclaimer for Temperament Test Results
                       </h4>
-                      <p class="text-sm sm:text-md text-justify data-aos fade-left">This temperament test is provided for informational purposes only. 
+                      <p class="text-sm lg:text-md text-justify data-aos fade-left">This temperament test is provided for informational purposes only. 
                         The results are based on self-reported information and are not a substitute for professional psychological assessment. 
                         Individual experiences may vary, and the test may not be accurate for all users. Please consult with a 
                         qualified professional if you have any concerns about your mental health.</p>
                   </div>
               </div>
                   <div class="flex flex-row item-center mt-22">
-                      <a class="border-2 rounded-md p-2 text-center mx-auto hover:border-black hover:bg-black bg-white text-black  text-sm sm:text-md  hover:text-white "
+                      <a class="border-2 rounded-md p-2 text-center mx-auto hover:border-black hover:bg-black bg-white text-black  text-sm lg:text-md  hover:text-white "
                           href="">DOWNLOAD RESULT </a>
                   </div>
 
               </dialog>
               <button
-                  class="border-2 rounded-md p-2 mx-auto hover:border-black hover:bg-black bg-white text-black  text-sm sm:text-md  hover:text-white">FULL
+                  class="border-2 rounded-md p-2 mx-auto hover:border-black hover:bg-black bg-white text-black  text-sm lg:text-md  hover:text-white">FULL
                   RESULT</button>
 
 
           </div>
 
-          <h4 class="text-sm sm:text-md">MODEL MADE BY TOPE AKINTOLA</h4>
+          <h4 class="text-sm lg:text-md">MODEL MADE BY TOPE AKINTOLA</h4>
       </div>
   </div>
   <footer class=" p-10 flex gap-10 flex-col mx-auto ">
-      <div class="flex gap-1  text-center sm:gap-80">
-          <div class="flex items-center flex-col gap-5 w-96 sm:w-auto sm:gap-10">
+      <div class="flex gap-1 justify-center text-center lg:gap-80">
+          <div class="flex items-center flex-col gap-5 w-96 lg:w-auto lg:gap-10">
               <div class=" flex flex-row items-center gap-5">
                   <img src={{url_for('static', filename='logo-2.svg')}} alt="" class="w-3/12">
                   <h4 class="font-semi-bold text-sm">temperament-test</h4>
@@ -457,24 +372,26 @@
               <div class="text-1xl flex gap-5  flex-col">
                   <h4>Follow us on </h4>
                   <ul class="flex justify-around  gap-10">
-                      <li><i class="fa fa-instagram text-3xl" aria-hidden="true"></i></li>
-                      <li><i class="fa fa-twitter text-3xl" aria-hidden="true"></i></li>
-                      <li><i class="fa fa-linkedin text-3xl" aria-hidden="true"></i></li>
+                    <a href="https://twitter.com/photofola"><i class="fa fa-twitter text-3xl" aria-hidden="true"></i></a>
+                      <a href="https://www.linkedin.com/in/tope-akintola-b47b381b9/"><i class="fa fa-linkedin text-3xl" aria-hidden="true"></i></a>
+
                   </ul>
               </div>
           </div>
-          <div class=" gap-3 hidden sm:grid sm:gap-36 grid-cols-3 ">
+          <div class=" gap-3 hidden lg:grid lg:gap-36 grid-cols-3 ">
               <ul class="flex flex-col text-left gap-2">
                   <h4 class="font-medium">Temperament-test</h4>
-                  <li>Learn</li>
-                  <li> Research Paper</li>
-                  <li>Invest</li>
-                  <li>Github</li>
+                    <li><a class="relative text-lg focus:text-black  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                  href="https://docs.google.com/document/d/1ZvCKes3CD53BcKTs9GnLqeCnQUZn-myQfHEgZlV4lhI/edit?usp=sharing">Learn</a></li>
+          <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                  href="">Research Paper</a></li>
+          <li><a class="relative text-lg  w-fit block hover:text-black after:block after:content-[''] after:absolute after:h-[2px] after:bg-black after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+                  href="https://github.com/akintola4/temperament-app">Github</a></li>
               </ul>
 
           </div>
       </div>
-      <div class="block sm:hidden">
+      <div class="block lg:hidden">
           <h4 class="text-center">SITE MAP</h4>
           <ul class="flex flex-row gap-5 justify-center">
               <li>Learn</li>
@@ -500,20 +417,5 @@
 </body>
 <script type="text/javascript"
 src="{{ url_for('static', filename='app.js') }}"></script>
-<script>
-  //using the modal 
-  const dialog = document.querySelector("dialog");
-  const showButton = document.querySelector("dialog + button");
-  const closeButton = document.querySelector("dialog button");
 
-  // "Show the dialog" button opens the dialog modally
-  showButton.addEventListener("click", () => {
-      dialog.showModal();
-  });
-
-  // "Close" button closes the dialog
-  closeButton.addEventListener("click", () => {
-      dialog.close();
-  });
-</script>
 </html>
