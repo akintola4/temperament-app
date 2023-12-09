@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 # Load the temperament dataset and train the classifiers
 data = pd.read_csv("temperament_dataset.csv")
-features = data[["openness", "neuroticism","conscientiousness","agreeableness", "extraversion"]]
+features = data[["openness","conscientiousness", "extraversion", "agreeableness","neuroticism","sensation-seeking","impulsiveness","optimism"]]
 labels = data["Temperament (Class label)"]
 X_train, X_test, y_train, y_test = train_test_split(features, labels, test_size=0.2)
 
@@ -59,7 +59,7 @@ def index():
     if request.method == 'POST':
         # Collect user input from the HTML form
         user_input = []
-        for trait in ["openness", "neuroticism","conscientiousness","agreeableness", "extraversion"]:
+        for trait in ["openness","conscientiousness", "extraversion", "agreeableness","neuroticism","sensation-seeking","impulsiveness","optimism"]:
             user_input_trait = int(request.form.get(trait, 0))
             user_input.append(user_input_trait)
 
