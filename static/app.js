@@ -57,37 +57,37 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('result-message-dialog').appendChild(resultMessageElementDialog);
 
                  
-               // Create and populate HTML elements for the accuracy message
-               const accuracyMessageElement = document.createElement('h2');
-               accuracyMessageElement.textContent = 'The Accuracy Scores for each machine learning model :';
+              //  // Create and populate HTML elements for the accuracy message
+              //  const accuracyMessageElement = document.createElement('h2');
+              //  accuracyMessageElement.textContent = 'The Accuracy Scores for each machine learning model :';
          
-               for (const classifierName in data.accuracyMessage) {
-                 const accuracyScore = data.accuracyMessage[classifierName];
-                 const accuracyScoreElement = document.createElement('p');
-                 accuracyScoreElement.textContent = ` ${classifierName}: ${accuracyScore.toFixed(3)}`;
-                 accuracyMessageElement.appendChild(accuracyScoreElement);
-                 accuracyMessageElement.appendChild(document.createElement('br'));
-               }
+              //  for (const classifierName in data.accuracyMessage) {
+              //    const accuracyScore = data.accuracyMessage[classifierName];
+              //    const accuracyScoreElement = document.createElement('p');
+              //    accuracyScoreElement.textContent = ` ${classifierName}: ${accuracyScore.toFixed(3)}`;
+              //    accuracyMessageElement.appendChild(accuracyScoreElement);
+              //    accuracyMessageElement.appendChild(document.createElement('br'));
+              //  }
          
-               document.getElementById('temperament-details').appendChild(accuracyMessageElement);
+              //  document.getElementById('temperament-details').appendChild(accuracyMessageElement);
          
               
-               // Handle individual predictions
-               const individualPredictions = data.individualPredictions;
-               const predictionsElement = document.getElementById('individual-predictions');
-               // Clear the existing predictions (if any)
-               predictionsElement.textContent = 'The individual predictions gotten by each machine learning model:';
+              //  // Handle individual predictions
+              //  const individualPredictions = data.individualPredictions;
+              //  const predictionsElement = document.getElementById('individual-predictions');
+              //  // Clear the existing predictions (if any)
+              //  predictionsElement.textContent = 'The individual predictions gotten by each machine learning model:';
          
-               // Create and add paragraph elements for each prediction
-               for (const prediction of individualPredictions) {
-                 const predictionElement = document.createElement('p');
-                 predictionElement.textContent = prediction;
-                 predictionsElement.appendChild(predictionElement);
-                 predictionsElement.appendChild(document.createElement('br'));
-               }
+              //  // Create and add paragraph elements for each prediction
+              //  for (const prediction of individualPredictions) {
+              //    const predictionElement = document.createElement('p');
+              //    predictionElement.textContent = prediction;
+              //    predictionsElement.appendChild(predictionElement);
+              //    predictionsElement.appendChild(document.createElement('br'));
+              //  }
          
-               // Display the individual predictions container
-               predictionsElement.style.display = 'block';
+              //  // Display the individual predictions container
+              //  predictionsElement.style.display = 'block';
 
         // Handle different temperament results using an if statement
         if (data.resultMessage === "Sanguine") {// Create and populate HTML elements for the Sanguine temperament description
